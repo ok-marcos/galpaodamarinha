@@ -10,8 +10,7 @@ def git_push():
         "C://Users//marcos.silva//Desktop//tdm_testing//10112022//git_repo")
     repo.git.add(update=True)
     repo.index.commit('COMMIT_MESSAGE')
-    origin = repo.remote(
-        name='https://github.com/ok-marcos/galpaodamarinha.git')
+    origin = repo.remote(name='origin')
     origin.push().raise_if_error()
     # except:
     #     print('ocorreu um erro')
