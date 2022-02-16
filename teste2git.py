@@ -9,7 +9,7 @@ def git_push():
     repo = Repo(
         "C://Users//marcos.silva//Desktop//tdm_testing//10112022//git_repo")
     repo.git.add(update=True)
-    repo.index.commit('COMMIT_MESSAGE')
+    repo.index.commit('IGOR DAS MENINAS')
     origin = repo.remote(name='origin')
     origin.push().raise_if_error()
     # except:
