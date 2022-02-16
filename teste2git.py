@@ -8,7 +8,7 @@ def git_push():
     # try:
     repo = Repo(
         "C:/Users/marcos.silva/Desktop/tdm_testing/10112022/git_repo")
-    repo.git.add(update=True)
+    repo.git.add('--all')
     repo.index.commit('IGOR DAS MENINAS')
     origin = repo.remote(name='origin')
     origin.push().raise_if_error()
