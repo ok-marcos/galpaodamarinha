@@ -7,7 +7,7 @@ COMMIT_MESSAGE = 'teste'
 def git_push():
     # try:
     repo = Repo(
-        "C://Users//marcos.silva//Desktop//tdm_testing//10112022//git_repo")
+        "C:/Users/marcos.silva/Desktop/tdm_testing/10112022/git_repo")
     repo.git.add(update=True)
     repo.index.commit('IGOR DAS MENINAS')
     origin = repo.remote(name='origin')
